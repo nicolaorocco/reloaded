@@ -7,7 +7,7 @@ import { Body, Button, Header, Image, Link } from "./components";
 import { web3Modal, logoutOfWeb3Modal } from './utils/web3Modal'
 import logo from "./ethereumLogo.png";
 
-import { addresses, abis } from "@project/contracts";
+import { addresses, abis } from "@reloaded/contracts";
 import GET_TRANSFERS from "./graphql/subgraph";
 
 async function readOnChainData() {
