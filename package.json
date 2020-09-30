@@ -1,0 +1,25 @@
+{
+  "name": "@project/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "subgraph": "yarn workspace @project/subgraph",
+    "react-app": "yarn workspace @project/react-app",
+    "contracts": "yarn workspace @project/contracts"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**"
+    ],
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
